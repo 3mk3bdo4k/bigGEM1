@@ -1,0 +1,221 @@
+
+/* Daily Life Page */
+
+.daily-hero {
+    min-height: 570px;
+    background:
+        linear-gradient(rgba(10, 10, 10, .78), rgba(10, 10, 10, .88)),
+        url("../images/daily-life.jpg") center/cover;
+    color: #fff;
+    padding: 30px 7%;
+    display: flex;
+    flex-direction: column;
+}
+
+.daily-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.daily-back {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+.daily-hero-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.daily-label,
+.daily-number {
+    color: #D4AF37;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
+.daily-hero h1 {
+    font-size: clamp(32px, 5vw, 58px);
+    margin: 20px 0;
+    color: #D4AF37;
+}
+
+.daily-hero-content p {
+    line-height: 2;
+    color: #ddd;
+    font-size: 17px;
+}
+
+.daily-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #D4AF37;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.daily-button:hover {
+    background: #fff;
+    transform: translateY(-4px);
+}
+
+.daily-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 22px;
+    color: #eee;
+}
+
+.daily-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 80px;
+}
+
+.daily-intro h2,
+.daily-info h2,
+.daily-facts h2 {
+    color: #D4AF37;
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+.daily-intro p,
+.daily-info p {
+    color: #ccc;
+    line-height: 2.1;
+    font-size: 16px;
+}
+
+.daily-section {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 65px 0;
+}
+
+.daily-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.daily-image-placeholder {
+    min-width: 280px;
+    width: 42%;
+    min-height: 260px;
+    border: 1px solid #80651e;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #242019, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.daily-info {
+    flex: 1;
+}
+
+.daily-facts {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.daily-facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.daily-fact {
+    background: rgba(212, 175, 55, .06);
+    border: 1px solid rgba(212, 175, 55, .25);
+    padding: 25px;
+    border-radius: 10px;
+    text-align: right;
+}
+
+.daily-fact span {
+    color: #D4AF37;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.daily-fact p {
+    color: #ddd;
+    line-height: 1.9;
+}
+
+.daily-conclusion {
+    margin: 85px 0 55px;
+    padding: 45px 30px;
+    text-align: center;
+    border-right: 4px solid #D4AF37;
+    background: rgba(212, 175, 55, .06);
+}
+
+.daily-conclusion h2 {
+    color: #D4AF37;
+}
+
+.daily-conclusion p {
+    color: #ddd;
+    line-height: 2.2;
+}
+
+.daily-sources {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.daily-sources h3 {
+    color: #D4AF37;
+}
+
+.daily-sources a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.daily-sources a:hover {
+    color: #D4AF37;
+}
+
+.daily-footer {
+    text-align: center;
+    padding: 25px;
+    color: #D4AF37;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .daily-section,
+    .daily-section.reverse {
+        flex-direction: column;
+    }
+
+    .daily-image-placeholder {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .daily-facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .daily-hero {
+        min-height: 480px;
+    }
+}

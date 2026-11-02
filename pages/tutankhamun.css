@@ -1,0 +1,587 @@
+
+/* Tutankhamun Page */
+
+.tut-page {
+    --tut-gold: #d4af37;
+    --tut-dark: #10100e;
+    --tut-card: #1d1a13;
+    --tut-text: #f2ead8;
+    --tut-muted: #bdb39e;
+
+    background: var(--tut-dark);
+    color: var(--tut-text);
+    overflow: hidden;
+}
+
+/* Header */
+
+.tut-header {
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #090908;
+    border-bottom: 1px solid rgba(212,175,55,.2);
+}
+
+.tut-logo {
+    color: var(--tut-gold);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.tut-logo span {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.tut-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.tut-nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 13px;
+    transition: .3s;
+}
+
+.tut-nav a:hover,
+.tut-nav a.active {
+    color: var(--tut-gold);
+}
+
+/* Hero */
+
+.tut-hero {
+    min-height: 500px;
+    padding: 85px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    position: relative;
+    isolation: isolate;
+    background:
+        radial-gradient(ellipse at 75% 50%, rgba(181,137,35,.23), transparent 45%),
+        linear-gradient(120deg, #11100d, #302515 60%, #13110d);
+}
+
+.tut-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        linear-gradient(rgba(212,175,55,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,175,55,.04) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to left, black, transparent);
+}
+
+.tut-hero-content {
+    max-width: 650px;
+}
+
+.tut-label {
+    color: var(--tut-gold);
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+
+.tut-hero h1 {
+    color: #f4e6c0;
+    font-size: clamp(42px, 7vw, 76px);
+    margin: 18px 0 5px;
+    line-height: 1.3;
+}
+
+.tut-hero h2 {
+    color: var(--tut-gold);
+    font-size: clamp(19px, 3vw, 27px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.tut-hero-content p {
+    color: #d0c5ae;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.tut-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 30px;
+    background: var(--tut-gold);
+    color: #17130a;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.tut-button:hover {
+    background: #f2d879;
+    transform: translateY(-3px);
+}
+
+.tut-hero-decoration {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border: 1px solid rgba(212,175,55,.5);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(212,175,55,.1);
+}
+
+.tut-hero-decoration span {
+    color: var(--tut-gold);
+    font-size: 75px;
+}
+
+.tut-hero-decoration p {
+    color: #e2d2a9;
+    font-size: 13px;
+}
+
+/* Sections */
+
+.tut-section {
+    padding: 85px 9%;
+}
+
+.tut-dark-section {
+    background: #171610;
+}
+
+.tut-heading {
+    margin-bottom: 40px;
+}
+
+.tut-heading > span {
+    color: var(--tut-gold);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.tut-heading h2 {
+    color: #f1e5c5;
+    font-size: clamp(26px, 4vw, 38px);
+    margin: 13px 0;
+}
+
+.tut-heading h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: var(--tut-gold);
+    margin-top: 17px;
+}
+
+.tut-heading > p {
+    color: var(--tut-muted);
+    line-height: 2;
+}
+
+/* Introduction */
+
+.tut-intro {
+    display: grid;
+    grid-template-columns: 1.4fr .8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.tut-intro-text p,
+.tut-discovery p,
+.tut-gem-content p {
+    color: var(--tut-muted);
+    line-height: 2.2;
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+
+.tut-quick-facts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.tut-quick-facts div {
+    padding: 17px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--tut-card);
+    border-right: 3px solid var(--tut-gold);
+    border-radius: 5px;
+}
+
+.tut-quick-facts strong {
+    color: var(--tut-gold);
+    font-size: 25px;
+}
+
+.tut-quick-facts span {
+    color: #d5c9ad;
+    font-size: 13px;
+}
+
+/* Discovery */
+
+.tut-discovery {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 35px;
+    align-items: start;
+}
+
+.tut-discovery-year {
+    font-size: 55px;
+    font-weight: 800;
+    color: var(--tut-gold);
+    border-left: 2px solid var(--tut-gold);
+    padding-left: 20px;
+}
+
+.tut-discovery h3 {
+    color: #f0e3c1;
+    font-size: 24px;
+    margin-bottom: 17px;
+}
+
+.tut-quote {
+    margin-top: 30px;
+    padding: 25px 30px;
+    background: #211d14;
+    border-right: 3px solid var(--tut-gold);
+}
+
+.tut-quote span {
+    color: var(--tut-gold);
+    font-weight: bold;
+}
+
+.tut-quote p {
+    color: var(--tut-muted);
+    line-height: 2;
+    margin-top: 10px;
+}
+
+/* Treasures */
+
+.tut-treasures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tut-treasure-card {
+    position: relative;
+    padding: 30px 25px;
+    min-height: 275px;
+    background: linear-gradient(145deg, #252116, #17150f);
+    border: 1px solid rgba(212,175,55,.18);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.tut-treasure-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--tut-gold);
+}
+
+.treasure-number {
+    color: var(--tut-gold);
+    font-size: 13px;
+    opacity: .8;
+}
+
+.treasure-symbol {
+    color: var(--tut-gold);
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.tut-treasure-card h3 {
+    color: #f1e5c5;
+    font-size: 21px;
+    margin-bottom: 13px;
+}
+
+.tut-treasure-card p {
+    color: var(--tut-muted);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.treasure-tag {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--tut-gold);
+    font-size: 12px;
+    border-bottom: 1px solid rgba(212,175,55,.4);
+    padding-bottom: 5px;
+}
+
+/* Five journeys */
+
+.tut-journeys {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.tut-journey {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: #211e17;
+    border: 1px solid rgba(212,175,55,.15);
+    border-radius: 7px;
+    transition: .3s;
+}
+
+.tut-journey:hover {
+    border-color: var(--tut-gold);
+    transform: translateX(-4px);
+}
+
+.tut-journey > span {
+    color: var(--tut-gold);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.tut-journey h3 {
+    color: #f1e5c5;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.tut-journey p {
+    color: var(--tut-muted);
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+/* GEM section */
+
+.tut-gem-content {
+    display: grid;
+    grid-template-columns: 1.4fr .7fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.tut-gem-content h3 {
+    color: #f1e5c5;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tut-official-link {
+    display: inline-block;
+    color: var(--tut-gold);
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.tut-official-link:hover {
+    color: #f2d879;
+}
+
+.tut-gem-stat {
+    min-height: 220px;
+    padding: 30px;
+    background: linear-gradient(145deg, #332817, #1b1811);
+    border: 1px solid rgba(212,175,55,.35);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tut-gem-stat span {
+    color: var(--tut-gold);
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.tut-gem-stat strong {
+    color: #f1e5c5;
+    font-size: 21px;
+    margin: 15px 0;
+}
+
+.tut-gem-stat small {
+    color: var(--tut-muted);
+}
+
+/* Fact */
+
+.tut-fact-section {
+    margin: 20px 9% 75px;
+    padding: 55px 30px;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at center, rgba(212,175,55,.16), transparent 70%),
+        #211d13;
+    border: 1px solid rgba(212,175,55,.3);
+    border-radius: 10px;
+}
+
+.tut-fact-section > span {
+    color: var(--tut-gold);
+    font-size: 14px;
+}
+
+.tut-fact-section h2 {
+    color: #f1e5c5;
+    margin: 18px 0;
+    font-size: 27px;
+}
+
+.tut-fact-section p {
+    color: var(--tut-muted);
+    line-height: 2;
+}
+
+/* Sources */
+
+.tut-sources {
+    padding: 45px 9%;
+    background: #171610;
+}
+
+.tut-sources h2 {
+    color: var(--tut-gold);
+    margin-bottom: 20px;
+}
+
+.tut-sources ul {
+    padding-right: 20px;
+}
+
+.tut-sources li {
+    color: var(--tut-muted);
+    margin: 13px 0;
+}
+
+.tut-sources a {
+    color: #d9cda9;
+    text-decoration: none;
+    line-height: 1.9;
+}
+
+.tut-sources a:hover {
+    color: var(--tut-gold);
+}
+
+/* Footer */
+
+.tut-back {
+    text-align: center;
+    padding: 30px;
+}
+
+.tut-back a {
+    color: var(--tut-gold);
+    text-decoration: none;
+}
+
+.tut-footer {
+    padding: 25px;
+    text-align: center;
+    background: #090908;
+    border-top: 1px solid rgba(212,175,55,.2);
+}
+
+.tut-footer p {
+    color: #ddd0ad;
+    margin-bottom: 10px;
+}
+
+.tut-footer span {
+    color: #827a68;
+    font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 850px) {
+    .tut-header {
+        flex-direction: column;
+    }
+
+    .tut-nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .tut-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tut-intro,
+    .tut-gem-content {
+        grid-template-columns: 1fr;
+    }
+
+    .tut-treasures {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tut-hero-decoration {
+        width: 170px;
+        height: 170px;
+    }
+
+    .tut-hero-decoration span {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 550px) {
+    .tut-section {
+        padding: 55px 6%;
+    }
+
+    .tut-treasures,
+    .tut-journeys {
+        grid-template-columns: 1fr;
+    }
+
+    .tut-discovery {
+        grid-template-columns: 1fr;
+    }
+
+    .tut-discovery-year {
+        font-size: 42px;
+        border-left: none;
+        border-bottom: 2px solid var(--tut-gold);
+        width: fit-content;
+        padding: 0 0 10px;
+    }
+
+    .tut-fact-section {
+        margin: 10px 6% 55px;
+    }
+}

@@ -1,0 +1,157 @@
+
+.explore-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+}
+
+.explore-logo {
+    color: #d4af37;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.explore-home {
+    color: #d4af37;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.explore-home:hover {
+    color: #fff;
+}
+
+.explore-container {
+    width: 90%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.explore-hero {
+    text-align: center;
+    padding: 75px 15px 55px;
+}
+
+.explore-label {
+    color: #d4af37;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.explore-hero h1 {
+    color: #d4af37;
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 18px 0;
+}
+
+.explore-hero p {
+    color: #c8c8c8;
+    max-width: 650px;
+    line-height: 2;
+    margin: auto;
+    font-size: 16px;
+}
+
+.explore-sections {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    padding-bottom: 60px;
+}
+
+.explore-card {
+    position: relative;
+    display: block;
+    padding: 28px 25px;
+    min-height: 225px;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(145deg, #202020, #141414);
+    border: 1px solid rgba(212, 175, 55, 0.22);
+    border-radius: 14px;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.explore-card:hover {
+    transform: translateY(-7px);
+    border-color: #d4af37;
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.12);
+}
+
+.explore-number {
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    color: rgba(212, 175, 55, 0.35);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.explore-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.explore-card h2 {
+    color: #d4af37;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.explore-card p {
+    color: #c5c5c5;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.explore-link {
+    color: #d4af37;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.explore-footer {
+    text-align: center;
+    padding: 30px 10px;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    color: #aaa;
+    line-height: 2;
+}
+
+.explore-footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .explore-sections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .explore-sections {
+        grid-template-columns: 1fr;
+    }
+
+    .explore-header {
+        padding: 18px 5%;
+    }
+
+    .explore-logo {
+        font-size: 19px;
+    }
+
+    .explore-hero {
+        padding-top: 50px;
+    }
+
+    .explore-card {
+        min-height: 190px;
+    }
+}

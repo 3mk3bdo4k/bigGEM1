@@ -1,0 +1,264 @@
+/* Restoration Page */
+
+.restoration-header {
+    min-height: 350px;
+    padding: 35px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:
+        linear-gradient(rgba(12, 12, 12, 0.82), rgba(12, 12, 12, 0.92)),
+        url("../images/restoration.jpg") center/cover;
+    color: #fff;
+    border-bottom: 2px solid #b89550;
+}
+
+.back-link {
+    color: #d6b66d;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+.header-content {
+    max-width: 750px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+.section-label,
+.gold-label {
+    color: #c6a45e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.header-content h1 {
+    color: #e2c27c;
+    font-size: clamp(30px, 5vw, 48px);
+    margin: 18px 0;
+}
+
+.header-content p {
+    color: #ddd;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.restoration-container {
+    width: min(1150px, 90%);
+    margin: auto;
+}
+
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 45px;
+    align-items: center;
+    padding: 85px 0;
+}
+
+.section-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid #b89550;
+}
+
+.section-text h2,
+.section-heading h2 {
+    color: #d8b96f;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.section-text p,
+.section-heading p {
+    color: #ccc;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.methods-section,
+.materials-section {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.methods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.method-card {
+    background: linear-gradient(145deg, #242424, #171717);
+    border: 1px solid rgba(198, 164, 94, 0.3);
+    padding: 28px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.method-card:hover,
+.material-card:hover {
+    transform: translateY(-7px);
+    border-color: #c6a45e;
+}
+
+.method-number {
+    color: #c6a45e;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.method-card h3,
+.material-card h3 {
+    color: #e0c27c;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.method-card p,
+.material-card p {
+    color: #bbb;
+    line-height: 1.9;
+    font-size: 14px;
+}
+
+.labs-section {
+    margin: 45px 0;
+    padding: 55px 7%;
+    background: linear-gradient(135deg, #29251c, #171717);
+    border-right: 4px solid #c6a45e;
+    border-radius: 12px;
+}
+
+.labs-content h2 {
+    color: #e0c27c;
+    font-size: 29px;
+    margin: 15px 0;
+}
+
+.labs-content p {
+    color: #ccc;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.science-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.science-tags span {
+    color: #e0c27c;
+    background: rgba(198, 164, 94, 0.12);
+    border: 1px solid rgba(198, 164, 94, 0.4);
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.materials-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.material-card {
+    text-align: center;
+    padding: 28px 18px;
+    background: #202020;
+    border: 1px solid rgba(198, 164, 94, 0.25);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.material-icon {
+    font-size: 38px;
+}
+
+.importance-section {
+    text-align: center;
+    padding: 75px 10%;
+    margin: 50px 0;
+    background: #201d17;
+    border-radius: 15px;
+}
+
+.importance-section h2 {
+    color: #e0c27c;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.importance-section p {
+    color: #ccc;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.restoration-footer {
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid rgba(198, 164, 94, 0.3);
+    color: #c6a45e;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+    .intro-section {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .methods-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .materials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .restoration-header {
+        min-height: 300px;
+        padding: 25px 6%;
+    }
+
+    .methods-grid,
+    .materials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content p {
+        font-size: 15px;
+    }
+
+    .section-text h2,
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .labs-section {
+        padding: 35px 22px;
+    }
+
+    .importance-section {
+        padding: 50px 22px;
+    }
+}

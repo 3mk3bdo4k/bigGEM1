@@ -1,0 +1,261 @@
+
+/* Mummification Page */
+
+.mum-hero {
+    min-height: 550px;
+    padding: 30px 7%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background:
+        linear-gradient(rgba(10, 10, 10, .8), rgba(10, 10, 10, .9)),
+        url("../images/mummies.jpg") center/cover;
+}
+
+.mum-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.mum-nav a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+.mum-hero-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.mum-hero-content span,
+.mum-number {
+    color: #D4AF37;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.mum-hero h1 {
+    color: #D4AF37;
+    font-size: clamp(34px, 5vw, 58px);
+    margin: 20px 0;
+}
+
+.mum-hero-content p {
+    color: #ddd;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.mum-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #D4AF37;
+    color: #111;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.mum-btn:hover {
+    background: #fff;
+    transform: translateY(-4px);
+}
+
+.mum-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 22px;
+    color: #eee;
+}
+
+.mum-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 80px;
+}
+
+.mum-intro h2,
+.mum-info h2,
+.mum-process h2,
+.mum-gods h2,
+.mum-discovery h2 {
+    color: #D4AF37;
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+.mum-intro p,
+.mum-info p,
+.mum-process-intro,
+.mum-discovery p {
+    color: #ccc;
+    line-height: 2.1;
+    font-size: 16px;
+}
+
+.mum-section {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 65px 0;
+}
+
+.mum-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.mum-visual {
+    min-width: 280px;
+    width: 42%;
+    min-height: 260px;
+    border: 1px solid #80651e;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #242019, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.mum-info {
+    flex: 1;
+}
+
+.mum-process {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.mum-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.mum-step {
+    padding: 28px 20px;
+    background: rgba(212, 175, 55, .06);
+    border: 1px solid rgba(212, 175, 55, .25);
+    border-radius: 10px;
+}
+
+.mum-step span {
+    color: #D4AF37;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.mum-step h3 {
+    color: #D4AF37;
+}
+
+.mum-step p {
+    color: #ccc;
+    line-height: 1.9;
+}
+
+.mum-gods {
+    text-align: center;
+    margin: 90px 0;
+}
+
+.mum-gods-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.mum-god {
+    padding: 30px 20px;
+    background: rgba(212, 175, 55, .06);
+    border: 1px solid rgba(212, 175, 55, .25);
+    border-radius: 10px;
+}
+
+.mum-god div {
+    font-size: 55px;
+}
+
+.mum-god h3 {
+    color: #D4AF37;
+}
+
+.mum-god p {
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.mum-discovery {
+    margin: 80px 0;
+}
+
+.mum-conclusion {
+    margin: 80px 0 55px;
+    padding: 45px 30px;
+    text-align: center;
+    border-right: 4px solid #D4AF37;
+    background: rgba(212, 175, 55, .06);
+}
+
+.mum-conclusion h2 {
+    color: #D4AF37;
+}
+
+.mum-conclusion p {
+    color: #ddd;
+    line-height: 2.2;
+}
+
+.mum-sources {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.mum-sources h3 {
+    color: #D4AF37;
+}
+
+.mum-sources a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.mum-sources a:hover {
+    color: #D4AF37;
+}
+
+.mum-footer {
+    text-align: center;
+    padding: 25px;
+    color: #D4AF37;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .mum-section,
+    .mum-section.reverse {
+        flex-direction: column;
+    }
+
+    .mum-visual {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .mum-steps,
+    .mum-gods-grid {
+        grid-template-columns: 1fr;
+    }
+}

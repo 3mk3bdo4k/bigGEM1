@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور | GEM Explorer</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <header class="gallery-header">
+        <a href="../index.html" class="gallery-back">← العودة للرئيسية</a>
+
+        <div class="gallery-hero">
+            <span class="gallery-label">GEM EXPLORER</span>
+            <h1>معرض الصور</h1>
+            <p>
+                شاهد عظمة الحضارة المصرية من خلال مجموعة
+                من الصور التي تحكي آلاف السنين من التاريخ.
+            </p>
+        </div>
+    </header>
+
+    <main class="gallery-container">
+
+        <section class="gallery-intro">
+            <span class="gallery-label">نافذة على التاريخ</span>
+            <h2>اكتشف الحضارة بالصورة</h2>
+            <p>
+                مجموعة من المشاهد المعمارية والقطع الأثرية
+                التي تمنحك تجربة بصرية داخل عالم مصر القديمة.
+            </p>
+        </section>
+
+        <section class="gallery-filters">
+            <button class="gallery-filter active" data-filter="all">الكل</button>
+            <button class="gallery-filter" data-filter="museum">المتحف</button>
+            <button class="gallery-filter" data-filter="statues">التماثيل</button>
+            <button class="gallery-filter" data-filter="treasures">الكنوز</button>
+            <button class="gallery-filter" data-filter="architecture">العمارة</button>
+        </section>
+
+        <section class="gallery-grid">
+
+            <article class="gallery-item" data-category="museum">
+                <img src="../photos/GEM.jpg"
+                     alt="المتحف المصري الكبير"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Grand+Egyptian+Museum'">
+                <div class="gallery-caption">
+                    <h3>المتحف المصري الكبير</h3>
+                    <p>صرح حضاري يجمع تاريخ مصر القديمة.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="statues">
+                <img src="../photos/rmses.jpg"
+                     alt="تمثال رمسيس الثاني"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Ramses+II'">
+                <div class="gallery-caption">
+                    <h3>رمسيس الثاني</h3>
+                    <p>أحد أبرز ملوك مصر القديمة.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="treasures">
+                <img src="../photos/mtot.jpg"
+                     alt="كنوز توت عنخ آمون"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Tutankhamun'">
+                <div class="gallery-caption">
+                    <h3>كنوز توت عنخ آمون</h3>
+                    <p>مقتنيات ملكية ذات قيمة تاريخية وفنية.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="architecture">
+                <img src="../photos/drg.jpg"
+                     alt="الدرج العظيم"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Grand+Staircase'">
+                <div class="gallery-caption">
+                    <h3>الدرج العظيم</h3>
+                    <p>مساحة تعرض مجموعة مميزة من الآثار الضخمة.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="statues">
+                <img src="../photos/tmathelmlky.jpg"
+                     alt="التماثيل المصرية القديمة"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Ancient+Statues'">
+                <div class="gallery-caption">
+                    <h3>التماثيل الملكية</h3>
+                    <p>شواهد فنية على مهارة النحات المصري القديم.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="architecture">
+                <img src="../photos/phw.jpg"
+                     alt="البهو العظيم"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Grand+Hall'">
+                <div class="gallery-caption">
+                    <h3>البهو العظيم</h3>
+                    <p>من أبرز المساحات المعمارية داخل المتحف.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="treasures">
+                <img src="../photos/7ly.jpg"
+                     alt="المجوهرات المصرية القديمة"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=Ancient+Jewelry'">
+                <div class="gallery-caption">
+                    <h3>الحلي والمجوهرات</h3>
+                    <p>قطع تكشف جمال الصناعة والفنون القديمة.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" data-category="museum">
+                <img src="../photos/ingem.jpg"
+                     alt="داخل المتحف المصري الكبير"
+                     onerror="this.src='https://placehold.co/700x500/252525/c6a45e?text=GEM+Interior'">
+                <div class="gallery-caption">
+                    <h3>داخل المتحف</h3>
+                    <p>تصميم يجمع بين العمارة الحديثة والتراث.</p>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="gallery-ending">
+            <span class="gallery-label">GEM EXPLORER</span>
+            <h2>الصورة تحكي ما لا تصفه الكلمات</h2>
+            <p>
+                خلف كل قطعة أثرية حكاية، وخلف كل صورة
+                نافذة تطل بنا على عظمة الحضارة المصرية.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- نافذة عرض الصور -->
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">×</button>
+        <button class="lightbox-arrow lightbox-next" id="lightboxNext">❯</button>
+
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <h3 id="lightboxTitle"></h3>
+            <p id="lightboxDescription"></p>
+        </div>
+
+        <button class="lightbox-arrow lightbox-prev" id="lightboxPrev">❮</button>
+    </div>
+
+    <footer class="gallery-footer">
+        <p>GEM Explorer | اكتشف عظمة الحضارة المصرية</p>
+    </footer>
+
+    <script>
+        const filters = document.querySelectorAll(".gallery-filter");
+        const items = [...document.querySelectorAll(".gallery-item")];
+
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImage = document.getElementById("lightboxImage");
+        const lightboxTitle = document.getElementById("lightboxTitle");
+        const lightboxDescription = document.getElementById("lightboxDescription");
+
+        let visibleItems = [];
+        let currentIndex = 0;
+
+        function updateVisibleItems() {
+            visibleItems = items.filter(item => item.style.display !== "none");
+        }
+
+        filters.forEach(button => {
+            button.addEventListener("click", () => {
+                filters.forEach(filter => filter.classList.remove("active"));
+                button.classList.add("active");
+
+                const category = button.dataset.filter;
+
+                items.forEach(item => {
+                    item.style.display =
+                        category === "all" || item.dataset.category === category
+                        ? "block"
+                        : "none";
+                });
+
+                updateVisibleItems();
+            });
+        });
+
+        function openLightbox(index) {
+            updateVisibleItems();
+
+            currentIndex = index;
+            const item = visibleItems[currentIndex];
+
+            if (!item) return;
+
+            const image = item.querySelector("img");
+            const title = item.querySelector("h3");
+            const description = item.querySelector("p");
+
+            lightboxImage.src = image.src;
+            lightboxImage.alt = image.alt;
+            lightboxTitle.textContent = title.textContent;
+            lightboxDescription.textContent = description.textContent;
+
+            lightbox.classList.add("show");
+            document.body.style.overflow = "hidden";
+        }
+
+        function changeImage(direction) {
+            if (!visibleItems.length) return;
+
+            currentIndex =
+                (currentIndex + direction + visibleItems.length) %
+                visibleItems.length;
+
+            openLightbox(currentIndex);
+        }
+
+        items.forEach(item => {
+            item.addEventListener("click", () => {
+                updateVisibleItems();
+                openLightbox(visibleItems.indexOf(item));
+            });
+        });
+
+        document.getElementById("lightboxClose").addEventListener("click", closeLightbox);
+
+        document.getElementById("lightboxNext").addEventListener("click", () => {
+            changeImage(1);
+        });
+
+        document.getElementById("lightboxPrev").addEventListener("click", () => {
+            changeImage(-1);
+        });
+
+        function closeLightbox() {
+            lightbox.classList.remove("show");
+            document.body.style.overflow = "";
+        }
+
+        lightbox.addEventListener("click", event => {
+            if (event.target === lightbox) {
+                closeLightbox();
+            }
+        });
+
+        document.addEventListener("keydown", event => {
+            if (!lightbox.classList.contains("show")) return;
+
+            if (event.key === "Escape") closeLightbox();
+            if (event.key === "ArrowRight") changeImage(1);
+            if (event.key === "ArrowLeft") changeImage(-1);
+        });
+
+        updateVisibleItems();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,607 @@
+
+/* Royal Statues Page */
+
+.statues-page {
+    --statue-gold: #d4af37;
+    --statue-dark: #10100e;
+    --statue-card: #1d1a13;
+    --statue-text: #f2ead8;
+    --statue-muted: #bdb39e;
+
+    background: var(--statue-dark);
+    color: var(--statue-text);
+    overflow: hidden;
+}
+
+/* Header */
+
+.statues-header {
+    min-height: 75px;
+    padding: 15px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #090908;
+    border-bottom: 1px solid rgba(212,175,55,.2);
+}
+
+.statues-logo {
+    color: var(--statue-gold);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.statues-logo span {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.statues-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.statues-nav a {
+    color: #ddd;
+    font-size: 13px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.statues-nav a:hover,
+.statues-nav a.active {
+    color: var(--statue-gold);
+}
+
+/* Hero */
+
+.statues-hero {
+    min-height: 490px;
+    padding: 85px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    position: relative;
+    isolation: isolate;
+    background:
+        radial-gradient(ellipse at 78% 50%, rgba(181,137,35,.2), transparent 45%),
+        linear-gradient(120deg, #11100d, #302515 60%, #13110d);
+}
+
+.statues-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+        linear-gradient(rgba(212,175,55,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212,175,55,.04) 1px, transparent 1px);
+    background-size: 42px 42px;
+    mask-image: linear-gradient(to left, black, transparent);
+}
+
+.statues-hero-content {
+    max-width: 650px;
+}
+
+.statues-eyebrow {
+    color: var(--statue-gold);
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.statues-hero h1 {
+    color: #f4e6c0;
+    font-size: clamp(40px, 6vw, 70px);
+    margin: 18px 0;
+    line-height: 1.3;
+}
+
+.statues-hero h2 {
+    color: var(--statue-gold);
+    font-size: clamp(19px, 3vw, 27px);
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.statues-hero-content p {
+    color: #d0c5ae;
+    line-height: 2;
+    font-size: 16px;
+}
+
+.statues-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 30px;
+    background: var(--statue-gold);
+    color: #17130a;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.statues-button:hover {
+    background: #f2d879;
+    transform: translateY(-3px);
+}
+
+.statues-hero-symbol {
+    width: 210px;
+    height: 210px;
+    flex-shrink: 0;
+    border: 1px solid rgba(212,175,55,.5);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(212,175,55,.1);
+}
+
+.statues-hero-symbol span {
+    color: var(--statue-gold);
+    font-size: 85px;
+}
+
+.statues-hero-symbol small {
+    color: #e2d2a9;
+    font-size: 12px;
+}
+
+/* Sections */
+
+.statues-section {
+    padding: 85px 9%;
+}
+
+.statues-dark {
+    background: #171610;
+}
+
+.statues-heading {
+    margin-bottom: 40px;
+}
+
+.statues-heading > span {
+    color: var(--statue-gold);
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.statues-heading h2 {
+    color: #f1e5c5;
+    font-size: clamp(26px, 4vw, 38px);
+    margin: 13px 0;
+}
+
+.statues-heading h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background: var(--statue-gold);
+    margin-top: 17px;
+}
+
+.statues-heading > p {
+    color: var(--statue-muted);
+    line-height: 2;
+}
+
+/* Introduction */
+
+.statues-intro {
+    display: grid;
+    grid-template-columns: 1.4fr .8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.statues-intro > div:first-child p {
+    color: var(--statue-muted);
+    line-height: 2.2;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.statues-intro-card {
+    padding: 35px 28px;
+    text-align: center;
+    background: linear-gradient(145deg, #302719, #19160f);
+    border: 1px solid rgba(212,175,55,.3);
+    border-radius: 9px;
+}
+
+.intro-symbol {
+    display: block;
+    color: var(--statue-gold);
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.statues-intro-card h3 {
+    color: #f0e3c1;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.statues-intro-card p {
+    color: var(--statue-muted);
+    line-height: 2;
+    font-size: 14px;
+}
+
+/* Types */
+
+.statues-types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.statue-type {
+    position: relative;
+    padding: 28px 22px;
+    min-height: 260px;
+    background: var(--statue-card);
+    border: 1px solid rgba(212,175,55,.16);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.statue-type:hover {
+    transform: translateY(-6px);
+    border-color: var(--statue-gold);
+}
+
+.type-number {
+    color: var(--statue-gold);
+    font-size: 13px;
+}
+
+.type-symbol {
+    color: var(--statue-gold);
+    font-size: 42px;
+    margin: 18px 0;
+}
+
+.statue-type h3 {
+    color: #f1e5c5;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.statue-type p {
+    color: var(--statue-muted);
+    font-size: 13px;
+    line-height: 2;
+}
+
+/* Kings */
+
+.statues-kings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.king-card {
+    position: relative;
+    padding: 35px 30px;
+    background: linear-gradient(145deg, #272217, #17150f);
+    border: 1px solid rgba(212,175,55,.18);
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.king-card:hover {
+    border-color: var(--statue-gold);
+    transform: translateY(-5px);
+}
+
+.king-index {
+    color: rgba(212,175,55,.35);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.king-era {
+    color: var(--statue-gold);
+    font-size: 12px;
+}
+
+.king-card h3 {
+    color: #f2e5c4;
+    font-size: 25px;
+    margin: 14px 0;
+}
+
+.king-card > p {
+    color: var(--statue-muted);
+    font-size: 14px;
+    line-height: 2;
+    min-height: 85px;
+}
+
+.king-fact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(212,175,55,.2);
+}
+
+.king-fact strong {
+    color: var(--statue-gold);
+    font-size: 26px;
+}
+
+.king-fact span {
+    color: #d6cbb3;
+    font-size: 13px;
+}
+
+/* Materials */
+
+.statues-materials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.material-card {
+    padding: 28px 22px;
+    background: #211e17;
+    border-radius: 7px;
+    border-bottom: 2px solid var(--statue-gold);
+}
+
+.material-mark {
+    color: var(--statue-gold);
+    font-size: 30px;
+}
+
+.material-card h3 {
+    color: #f1e5c5;
+    margin: 16px 0 12px;
+    font-size: 19px;
+}
+
+.material-card p {
+    color: var(--statue-muted);
+    font-size: 13px;
+    line-height: 2;
+}
+
+.statues-note {
+    margin-top: 30px;
+    padding: 20px 25px;
+    background: rgba(212,175,55,.07);
+    border-right: 3px solid var(--statue-gold);
+}
+
+.statues-note strong {
+    color: var(--statue-gold);
+}
+
+.statues-note p {
+    color: var(--statue-muted);
+    margin-top: 8px;
+    line-height: 1.9;
+}
+
+/* Symbols */
+
+.statues-symbols {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.symbol-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 25px;
+    background: var(--statue-card);
+    border: 1px solid rgba(212,175,55,.15);
+    border-radius: 7px;
+}
+
+.symbol-icon {
+    min-width: 65px;
+    color: var(--statue-gold);
+    font-size: 40px;
+    text-align: center;
+}
+
+.symbol-row h3 {
+    color: #f1e5c5;
+    margin-bottom: 9px;
+}
+
+.symbol-row p {
+    color: var(--statue-muted);
+    line-height: 1.9;
+    font-size: 13px;
+}
+
+/* GEM */
+
+.statues-gem {
+    margin: 20px 9% 75px;
+    padding: 55px 30px;
+    text-align: center;
+    background:
+        radial-gradient(ellipse at center, rgba(212,175,55,.16), transparent 70%),
+        #211d13;
+    border: 1px solid rgba(212,175,55,.3);
+    border-radius: 10px;
+}
+
+.statues-gem > span {
+    color: var(--statue-gold);
+    font-size: 13px;
+}
+
+.statues-gem h2 {
+    color: #f1e5c5;
+    margin: 18px 0;
+    font-size: 27px;
+}
+
+.statues-gem p {
+    color: var(--statue-muted);
+    line-height: 2;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.statues-gem a {
+    display: inline-block;
+    color: var(--statue-gold);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.statues-gem a:hover {
+    color: #f2d879;
+}
+
+/* Sources */
+
+.statues-sources {
+    padding: 45px 9%;
+    background: #171610;
+}
+
+.statues-sources h2 {
+    color: var(--statue-gold);
+    margin-bottom: 20px;
+}
+
+.statues-sources ul {
+    padding-right: 20px;
+}
+
+.statues-sources li {
+    color: var(--statue-muted);
+    margin: 13px 0;
+}
+
+.statues-sources a {
+    color: #d9cda9;
+    text-decoration: none;
+    line-height: 1.9;
+}
+
+.statues-sources a:hover {
+    color: var(--statue-gold);
+}
+
+/* Footer */
+
+.statues-back {
+    padding: 30px;
+    text-align: center;
+}
+
+.statues-back a {
+    color: var(--statue-gold);
+    text-decoration: none;
+}
+
+.statues-footer {
+    padding: 25px;
+    text-align: center;
+    background: #090908;
+    border-top: 1px solid rgba(212,175,55,.2);
+}
+
+.statues-footer p {
+    color: #ddd0ad;
+    margin-bottom: 10px;
+}
+
+.statues-footer span {
+    color: #827a68;
+    font-size: 12px;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+    .statues-types,
+    .statues-materials {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .statues-intro {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .statues-header {
+        flex-direction: column;
+    }
+
+    .statues-nav {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .statues-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 7%;
+    }
+
+    .statues-hero-symbol {
+        width: 160px;
+        height: 160px;
+    }
+
+    .statues-hero-symbol span {
+        font-size: 60px;
+    }
+
+    .statues-kings {
+        grid-template-columns: 1fr;
+    }
+
+    .king-card > p {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .statues-section {
+        padding: 55px 6%;
+    }
+
+    .statues-types,
+    .statues-materials,
+    .statues-symbols {
+        grid-template-columns: 1fr;
+    }
+
+    .statues-gem {
+        margin: 10px 6% 55px;
+    }
+
+    .symbol-row {
+        gap: 15px;
+        padding: 20px;
+    }
+}

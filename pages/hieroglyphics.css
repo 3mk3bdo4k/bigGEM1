@@ -1,0 +1,273 @@
+
+/* Hieroglyphics Page */
+
+.hiero-hero {
+    min-height: 550px;
+    padding: 30px 7%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background:
+        linear-gradient(rgba(10, 10, 10, .8), rgba(10, 10, 10, .9)),
+        url("../images/hieroglyphics.jpg") center/cover;
+}
+
+.hiero-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.hiero-nav a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+.hiero-hero-content {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.hiero-hero-content span,
+.hiero-number {
+    color: #D4AF37;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.hiero-hero h1 {
+    color: #D4AF37;
+    font-size: clamp(34px, 5vw, 58px);
+    margin: 20px 0;
+}
+
+.hiero-hero-content p {
+    color: #ddd;
+    line-height: 2;
+    font-size: 17px;
+}
+
+.hiero-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 28px;
+    background: #D4AF37;
+    color: #111;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.hiero-btn:hover {
+    background: #fff;
+    transform: translateY(-4px);
+}
+
+.hiero-container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 22px;
+    color: #eee;
+}
+
+.hiero-intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 80px;
+}
+
+.hiero-intro h2,
+.hiero-info h2,
+.hiero-symbols h2,
+.hiero-rosetta h2,
+.hiero-legacy h2 {
+    color: #D4AF37;
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+.hiero-intro p,
+.hiero-info p,
+.hiero-rosetta p,
+.hiero-legacy p {
+    color: #ccc;
+    line-height: 2.1;
+    font-size: 16px;
+}
+
+.hiero-section {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    margin: 65px 0;
+}
+
+.hiero-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.hiero-visual {
+    min-width: 280px;
+    width: 42%;
+    min-height: 260px;
+    border: 1px solid #80651e;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #242019, #111);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+}
+
+.hiero-info {
+    flex: 1;
+}
+
+.hiero-list {
+    color: #ccc;
+    line-height: 2.3;
+    padding-right: 20px;
+}
+
+.hiero-list strong {
+    color: #D4AF37;
+}
+
+.hiero-symbols {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.hiero-symbol-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.hiero-symbol {
+    padding: 25px 15px;
+    background: rgba(212, 175, 55, .06);
+    border: 1px solid rgba(212, 175, 55, .25);
+    border-radius: 10px;
+}
+
+.hiero-symbol span {
+    display: block;
+    font-size: 48px;
+    color: #D4AF37;
+}
+
+.hiero-symbol h3 {
+    color: #D4AF37;
+}
+
+.hiero-symbol p,
+.hiero-note {
+    color: #ccc;
+    line-height: 1.9;
+}
+
+.hiero-note {
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.hiero-rosetta {
+    margin: 90px 0;
+}
+
+.hiero-rosetta-content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 30px;
+    background: rgba(212, 175, 55, .06);
+    border: 1px solid rgba(212, 175, 55, .2);
+    border-radius: 12px;
+}
+
+.hiero-rosetta-icon {
+    font-size: 85px;
+}
+
+.hiero-legacy {
+    margin: 80px 0;
+}
+
+.hiero-conclusion {
+    margin: 80px 0 55px;
+    padding: 45px 30px;
+    text-align: center;
+    border-right: 4px solid #D4AF37;
+    background: rgba(212, 175, 55, .06);
+}
+
+.hiero-conclusion h2 {
+    color: #D4AF37;
+}
+
+.hiero-conclusion p {
+    color: #ddd;
+    line-height: 2.2;
+}
+
+.hiero-sources {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hiero-sources h3 {
+    color: #D4AF37;
+}
+
+.hiero-sources a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.hiero-sources a:hover {
+    color: #D4AF37;
+}
+
+.hiero-footer {
+    text-align: center;
+    padding: 25px;
+    color: #D4AF37;
+    border-top: 1px solid #333;
+}
+
+@media (max-width: 768px) {
+    .hiero-section,
+    .hiero-section.reverse {
+        flex-direction: column;
+    }
+
+    .hiero-visual {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .hiero-symbol-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hiero-rosetta-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .hiero-symbol-grid {
+        grid-template-columns: 1fr;
+    }
+}

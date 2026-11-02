@@ -1,0 +1,557 @@
+
+/* =================================
+   GEM EXPLORER - GRAND HALL
+================================= */
+
+.grand-hall-page {
+    background: #f8f6f1;
+    color: #25231f;
+    font-family: 'Cairo', sans-serif;
+}
+
+/* Hero */
+
+.hall-hero {
+    min-height: 570px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(12, 12, 12, .35), rgba(12, 12, 12, .88)),
+        url("https://sis.gov.eg/media/277386/%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%89-%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B15.jpg")
+        center 35% / cover no-repeat;
+    color: #fff;
+}
+
+.hall-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        0deg,
+        rgba(15, 13, 10, .65),
+        transparent
+    );
+}
+
+.hall-hero-content {
+    position: relative;
+    z-index: 2;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.hall-eyebrow,
+.hall-tag {
+    color: #b58b45;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.hall-hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    font-weight: 900;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+.hall-hero h1 span {
+    display: block;
+    color: #d6b46d;
+    font-size: .55em;
+    direction: ltr;
+    text-align: right;
+}
+
+.hall-hero-content > p {
+    max-width: 650px;
+    color: #e6e1d8;
+    line-height: 2.1;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.hall-main-btn,
+.hall-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px 26px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: .3s;
+}
+
+.hall-main-btn {
+    background: #bd974e;
+    color: #17130d;
+}
+
+.hall-main-btn:hover {
+    background: #d9b86f;
+    transform: translateY(-3px);
+}
+
+.hall-secondary-btn {
+    border: 1px solid #bd974e;
+    color: #fff;
+}
+
+.hall-secondary-btn:hover {
+    background: #bd974e;
+    color: #17130d;
+}
+
+.hall-hero-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 6%;
+    color: #e6dfd2;
+    font-size: 12px;
+    z-index: 2;
+}
+
+
+/* Breadcrumb */
+
+.hall-breadcrumb {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    color: #888;
+}
+
+.hall-breadcrumb a {
+    color: #92703a;
+    text-decoration: none;
+}
+
+.hall-breadcrumb strong {
+    color: #302a20;
+}
+
+
+/* General Sections */
+
+.hall-section {
+    padding: 85px 0;
+}
+
+.hall-heading {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.hall-heading h2 {
+    font-size: clamp(27px, 4vw, 40px);
+    font-weight: 900;
+    margin: 13px 0;
+    color: #29251e;
+}
+
+.hall-heading p {
+    color: #777;
+    line-height: 2;
+}
+
+.hall-tag {
+    display: inline-block;
+}
+
+
+/* Introduction */
+
+.hall-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.hall-intro-text h3 {
+    font-size: 26px;
+    color: #8b682e;
+    margin-bottom: 20px;
+}
+
+.hall-intro-text p {
+    line-height: 2.1;
+    color: #68635a;
+    margin-bottom: 15px;
+}
+
+.hall-intro-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.12);
+}
+
+.hall-intro-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+}
+
+.hall-intro-image span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    background: linear-gradient(transparent, rgba(0,0,0,.85));
+    font-weight: 800;
+}
+
+
+/* Ramses Section */
+
+.ramses-section {
+    padding: 90px 0;
+    background: #211e19;
+    color: #fff;
+}
+
+.ramses-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 55px;
+}
+
+.ramses-image {
+    position: relative;
+}
+
+.ramses-image img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.ramses-image-label {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    left: 20px;
+    padding: 15px 20px;
+    background: rgba(15, 13, 10, .85);
+    border-right: 3px solid #c19a52;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ramses-image-label span {
+    color: #d6b46d;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.ramses-content h2 {
+    font-size: clamp(30px, 4vw, 45px);
+    margin: 15px 0 25px;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+.ramses-content h2 span {
+    display: block;
+    color: #d0a95d;
+    font-size: .65em;
+}
+
+.ramses-content > p {
+    line-height: 2.1;
+    color: #d0cbc2;
+    margin-bottom: 16px;
+}
+
+.ramses-facts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.ramses-facts div {
+    background: #302b23;
+    border: 1px solid rgba(205, 169, 97, .2);
+    padding: 18px 8px;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.ramses-facts strong {
+    display: block;
+    color: #d6b46d;
+    font-size: 27px;
+    direction: ltr;
+}
+
+.ramses-facts span {
+    font-size: 11px;
+    color: #ddd4c6;
+}
+
+
+/* Artifacts */
+
+.artifacts-section {
+    background: #f1eee7;
+}
+
+.artifacts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.artifact-card {
+    position: relative;
+    padding: 35px;
+    background: #fff;
+    border: 1px solid #e9e1d1;
+    border-radius: 9px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.artifact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.08);
+    border-color: #bd974e;
+}
+
+.artifact-number {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: #d5c6a6;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.artifact-symbol {
+    color: #b18b48;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.artifact-card h3 {
+    color: #3a3021;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.artifact-card p {
+    color: #777;
+    line-height: 2;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.artifact-period {
+    display: inline-block;
+    color: #98753d;
+    background: #f7f1e5;
+    border-radius: 30px;
+    padding: 7px 13px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* Architecture */
+
+.hall-architecture {
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    background:
+        linear-gradient(rgba(20, 17, 12, .88), rgba(20, 17, 12, .88)),
+        url("https://sis.gov.eg/media/277386/%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D9%81-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%89-%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B15.jpg")
+        center / cover fixed;
+}
+
+.architecture-content {
+    max-width: 850px;
+}
+
+.architecture-content h2 {
+    font-size: clamp(27px, 4vw, 43px);
+    margin: 20px 0;
+    font-weight: 900;
+}
+
+.architecture-content p {
+    color: #ddd5c8;
+    line-height: 2.2;
+    margin-bottom: 15px;
+}
+
+
+/* Did You Know */
+
+.did-you-know-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.did-you-know-card {
+    background: #fff;
+    padding: 30px 25px;
+    text-align: center;
+    border-radius: 8px;
+    border-bottom: 3px solid #bd974e;
+    box-shadow: 0 5px 20px rgba(0,0,0,.04);
+}
+
+.did-you-know-card span {
+    display: block;
+    font-size: 38px;
+    color: #bd974e;
+    margin-bottom: 15px;
+}
+
+.did-you-know-card p {
+    color: #666;
+    line-height: 2;
+    font-size: 14px;
+}
+
+
+/* Next Section */
+
+.hall-next-section {
+    background: #211e19;
+    padding: 85px 20px;
+    color: white;
+    text-align: center;
+}
+
+.hall-next-section h2 {
+    font-size: 36px;
+    margin: 15px 0;
+    font-weight: 900;
+}
+
+.hall-next-section p {
+    color: #d2c9bb;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+.hall-next-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* Sources */
+
+.hall-sources {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.hall-sources h3 {
+    color: #8b682e;
+    margin-bottom: 12px;
+}
+
+.hall-sources p {
+    color: #777;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+.hall-sources a {
+    display: inline-block;
+    margin: 5px 0 5px 18px;
+    color: #8b682e;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.hall-sources a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .hall-intro-grid,
+    .ramses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hall-intro-image img {
+        height: 320px;
+    }
+
+    .ramses-image img {
+        height: 430px;
+    }
+
+    .did-you-know-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hall-hero {
+        min-height: 520px;
+    }
+
+    .hall-hero-content > p {
+        font-size: 14px;
+    }
+
+    .hall-section {
+        padding: 60px 0;
+    }
+
+    .artifacts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artifact-card {
+        padding: 27px;
+    }
+
+    .ramses-facts {
+        gap: 7px;
+    }
+
+    .ramses-facts strong {
+        font-size: 22px;
+    }
+
+    .ramses-facts span {
+        font-size: 10px;
+    }
+
+    .hall-next-section h2 {
+        font-size: 28px;
+    }
+
+}

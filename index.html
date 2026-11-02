@@ -1,0 +1,481 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GEM Explorer - موسوعة رقمية تفاعلية لاكتشاف المتحف المصري الكبير وكنوز الحضارة المصرية القديمة.">
+    <title>GEM Explorer | اكتشف المتحف المصري الكبير</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">
+                <span class="logo-icon">𓂀</span>
+                <span>
+                    <strong>GEM</strong>
+                    <small>EXPLORER</small>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="active">الرئيسية</a></li>
+                <li><a href="#about">عن المتحف</a></li>
+                <li><a href="#explore">استكشف المتحف</a></li>
+                <li><a href="#collections">المقتنيات</a></li>
+                <li><a href="#tut">توت عنخ آمون</a></li>
+                <li><a href="#knowledge">مركز المعرفة</a></li>
+            </ul>
+
+            <a href="#explore" class="nav-button">ابدأ الاستكشاف</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <span class="eyebrow">رحلة إلى قلب الحضارة المصرية</span>
+
+                <h1>
+                    آلاف السنين من
+                    <span>العظمة والإبداع</span>
+                </h1>
+
+                <p>
+                    اكتشف المتحف المصري الكبير، واستكشف أسرار الحضارة المصرية
+                    القديمة من خلال تجربة رقمية تجمع بين التاريخ والعلم والتكنولوجيا.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#explore" class="btn btn-gold">اكتشف المتحف</a>
+                    <a href="#about" class="btn btn-outline">تعرف على المتحف</a>
+                </div>
+
+                <div class="hero-caption">
+                    <span></span>
+                    المتحف المصري الكبير - الجيزة، مصر
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <span>اكتشف المزيد</span>
+                <span>↓</span>
+            </div>
+        </section>
+
+        <!-- Introduction -->
+        <section class="section about-section" id="about">
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?w=1000" alt="أهرامات الجيزة">
+                    <div class="image-label">حضارة تمتد لآلاف السنين</div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">تعرف على المتحف</span>
+
+                    <h2>
+                        ليس مجرد متحف...
+                        <span>بل رحلة عبر التاريخ</span>
+                    </h2>
+
+                    <p>
+                        يُعد المتحف المصري الكبير أحد أبرز المشروعات الثقافية
+                        والحضارية في العالم، ويقع بالقرب من أهرامات الجيزة،
+                        ليقدم تجربة استثنائية لاكتشاف تاريخ مصر القديمة.
+                    </p>
+
+                    <p>
+                        يجمع المتحف بين آلاف القطع الأثرية النادرة،
+                        والتصميم المعماري الحديث، وأحدث تقنيات العرض والترميم،
+                        ليكون نافذة على واحدة من أعظم الحضارات الإنسانية.
+                    </p>
+
+                    <a href="pages/about.html" class="text-link">
+                        اكتشف تاريخ المتحف ←
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="section-heading center">
+                    <span class="section-tag">المتحف بالأرقام</span>
+                    <h2>أرقام تحكي عظمة المكان</h2>
+                    <p>حقائق وإحصائيات عن أحد أكبر المتاحف الأثرية في العالم.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-icon">▦</span>
+                        <h3 data-count="12">0</h3>
+                        <p>قاعة عرض رئيسية</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">𓃭</span>
+                        <h3 data-count="5000" data-suffix="+">0</h3>
+                        <p>قطعة من كنوز توت عنخ آمون</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">⌂</span>
+                        <h3 data-count="500000" data-suffix="+">0</h3>
+                        <p>متر مربع تقريبًا للمشروع</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <span class="stat-icon">✧</span>
+                        <h3>2025</h3>
+                        <p>الافتتاح الرسمي</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Explore Museum -->
+        <section class="section explore-section" id="explore">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">اكتشف المكان</span>
+                    <h2>استكشف أركان المتحف</h2>
+                    <p>
+                        تعرف على أبرز المعالم والمساحات التي تجعل المتحف تجربة
+                        استثنائية لعشاق التاريخ والحضارة.
+                    </p>
+                </div>
+
+                <div class="cards-grid">
+
+                    <a href="pages/grand-hall.html" class="feature-card">
+                        <img src="photos/rmses.jpg">
+                        <div class="card-overlay">
+                            <span>01</span>
+                            <h3>البهو العظيم</h3>
+                            <p>اكتشف تمثال رمسيس الثاني والمسلة المعلقة.</p>
+                            <span class="card-link">استكشف القسم ←</span>
+                        </div>
+                    </a>
+
+                    <a href="pages/grand-staircase.html" class="feature-card">
+                        <img src="photos/drg.jpg">
+                        <div class="card-overlay">
+                            <span>02</span>
+                            <h3>الدرج العظيم</h3>
+                            <p>رحلة بين التماثيل الملكية والآثار الضخمة.</p>
+                            <span class="card-link">استكشف القسم ←</span>
+                        </div>
+                    </a>
+
+                    <a href="pages/galleries.html" class="feature-card">
+                        <img src="photos/ingem.jpg">
+                        <div class="card-overlay">
+                            <span>03</span>
+                            <h3>قاعات العرض</h3>
+                            <p>اثنتا عشرة قاعة تروي تاريخ الحضارة المصرية.</p>
+                            <span class="card-link">استكشف القسم ←</span>
+                        </div>
+                    </a>
+
+                    <a href="pages/khufu-boats.html" class="feature-card">
+                        <img src="photos/5ofo.jpg">
+                        <div class="card-overlay">
+                            <span>04</span>
+                            <h3>مراكب الملك خوفو</h3>
+                            <p>تعرف على أسرار صناعة المراكب الملكية.</p>
+                            <span class="card-link">استكشف القسم ←</span>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="center-button">
+                    <a href="pages/explore.html" class="btn btn-dark">عرض جميع الأقسام</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Tutankhamun -->
+        <section class="tut-section" id="tut">
+            <div class="container tut-grid">
+
+                <div class="tut-content">
+                    <span class="section-tag">كنوز لا تقدر بثمن</span>
+
+                    <h2>
+                        توت عنخ آمون
+                        <span>الملك الذهبي</span>
+                    </h2>
+
+                    <p>
+                        اكتشف عالم الملك الشاب توت عنخ آمون، من قصة حياته
+                        واكتشاف مقبرته إلى كنوزه الملكية التي أبهرت العالم.
+                    </p>
+
+                    <ul class="tut-list">
+                        <li>القناع الذهبي الشهير</li>
+                        <li>العروش والمقتنيات الملكية</li>
+                        <li>العربات والأدوات الشخصية</li>
+                        <li>الكنوز والمقتنيات الجنائزية</li>
+                    </ul>
+
+                    <a href="pages/tutankhamun.html" class="btn btn-gold">
+                        اكتشف كنوز الملك
+                    </a>
+                </div>
+
+                <div class="tut-image">
+                    <img src="photos/tot.jpg">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Collections -->
+        <section class="section collections-section" id="collections">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">كنوز الحضارة</span>
+                    <h2>المقتنيات الأثرية</h2>
+                    <p>تعرف على روائع الفن والإبداع في مصر القديمة.</p>
+                </div>
+
+                <div class="collections-grid">
+
+                    <a href="pages/statues.html" class="collection-card">
+                        <div class="collection-icon">𓀀</div>
+                        <h3>التماثيل الملكية</h3>
+                        <p>روائع النحت والفن المصري القديم.</p>
+                    </a>
+
+                    <a href="pages/jewelry.html" class="collection-card">
+                        <div class="collection-icon">✧</div>
+                        <h3>الحُلي والمجوهرات</h3>
+                        <p>جمال ودقة صناعة المجوهرات القديمة.</p>
+                    </a>
+
+                    <a href="pages/coffins.html" class="collection-card">
+                        <div class="collection-icon">𓊽</div>
+                        <h3>التوابيت والمومياوات</h3>
+                        <p>أسرار التحنيط والمعتقدات الجنائزية.</p>
+                    </a>
+
+                    <a href="pages/daily-life.html" class="collection-card">
+                        <div class="collection-icon">𓏏</div>
+                        <h3>الحياة اليومية</h3>
+                        <p>أدوات وملابس وحياة المصري القديم.</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Science and Restoration -->
+        <section class="science-section">
+            <div class="container science-content">
+                <span class="section-tag">العلم في خدمة التاريخ</span>
+                <h2>حين تلتقي العلوم بالحضارة</h2>
+
+                <p>
+                    كيف تساعد الكيمياء والفيزياء والهندسة والتكنولوجيا
+                    في اكتشاف الآثار وترميمها والحفاظ عليها؟
+                </p>
+
+                <a href="pages/restoration.html" class="btn btn-gold">
+                    اكتشف عالم الترميم
+                </a>
+            </div>
+        </section>
+
+        <!-- Knowledge Center -->
+        <section class="section knowledge-section" id="knowledge">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">تعلم واكتشف</span>
+                    <h2>مركز المعرفة</h2>
+                    <p>مساحة معرفية لفهم التاريخ المصري القديم.</p>
+                </div>
+
+                <div class="knowledge-grid">
+
+                    <a href="pages/timeline.html" class="knowledge-card">
+                        <span>⌛</span>
+                        <h3>الخط الزمني</h3>
+                        <p>رحلة عبر العصور والأسرات المصرية.</p>
+                    </a>
+
+                    <a href="pages/facts.html" class="knowledge-card">
+                        <span>✦</span>
+                        <h3>حقائق وأرقام</h3>
+                        <p>معلومات مميزة عن المتحف والحضارة.</p>
+                    </a>
+
+                    <a href="pages/glossary.html" class="knowledge-card">
+                        <span>𓂀</span>
+                        <h3>المصطلحات الأثرية</h3>
+                        <p>تعرف على أهم المصطلحات التاريخية.</p>
+                    </a>
+
+                    <a href="pages/gallery.html" class="knowledge-card">
+                        <span>▧</span>
+                        <h3>معرض الصور</h3>
+                        <p>شاهد صور المتحف ومقتنياته.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Search -->
+        <section class="search-section">
+            <div class="container search-content">
+                <span class="section-tag">ابحث واكتشف</span>
+                <h2>عن ماذا تبحث في المتحف؟</h2>
+                <p>ابدأ رحلتك المعرفية وابحث عن أي موضوع يثير اهتمامك.</p>
+
+                <form class="search-box" id="searchForm">
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="ابحث عن ملك أو قطعة أثرية أو قسم..."
+                        aria-label="ابحث في الموقع"
+                    >
+                    <button type="submit">بحث</button>
+                </form>
+                <p class="search-note" id="searchNote"></p>
+            </div>
+        </section>
+
+        <!-- GEM QUIZ -->
+        <section class="quiz-section" id="gem-quiz">
+            <div class="container">
+                <div class="quiz-container">
+
+                    <div class="quiz-content">
+                        <span class="section-tag">GEM KNOWLEDGE CHALLENGE</span>
+
+                        <h2>
+                            هل أنت خبير بالمتحف المصري الكبير؟
+                        </h2>
+
+                        <p>
+                            اختبر معلوماتك عن تاريخ المتحف وكنوزه الأثرية
+                            وتصميمه وأهم مقتنياته، وأثبت أنك من عشاق الحضارة المصرية.
+                        </p>
+
+                        <div class="quiz-features">
+                            <div class="quiz-feature">
+                                <span>📝</span>
+                                <span>15 سؤالًا متنوعًا</span>
+                            </div>
+
+                            <div class="quiz-feature">
+                                <span>⏱️</span>
+                                <span>15 دقيقة</span>
+                            </div>
+
+                            <div class="quiz-feature">
+                                <span>🏆</span>
+                                <span>شهادة تقدير عند النجاح</span>
+                            </div>
+                        </div>
+
+                        <a href="pages/quiz.html" class="quiz-button">
+                            ابدأ الاختبار الآن
+                            <span>←</span>
+                        </a>
+
+                        <p class="quiz-note">
+                            أجب عن الأسئلة واجمع 12 درجة على الأقل لتحصل على شهادتك.
+                        </p>
+                    </div>
+
+                    <div class="quiz-visual">
+                        <div class="quiz-circle"></div>
+                        <div class="quiz-icon">🏛️</div>
+                        <span class="quiz-decoration">𓂀</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- END GEM QUIZ -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-icon">𓂀</span>
+                    <span>
+                        <strong>GEM</strong>
+                        <small>EXPLORER</small>
+                    </span>
+                </a>
+
+                <p>
+                    نافذتك الرقمية لاكتشاف المتحف المصري الكبير
+                    وأسرار الحضارة المصرية القديمة.
+                </p>
+            </div>
+
+            <div>
+                <h3>استكشف</h3>
+                <a href="#about">عن المتحف</a>
+                <a href="#explore">أقسام المتحف</a>
+                <a href="#collections">المقتنيات</a>
+                <a href="#tut">توت عنخ آمون</a>
+            </div>
+
+            <div>
+                <h3>المعرفة</h3>
+                <a href="#knowledge">مركز المعرفة</a>
+                <a href="pages/timeline.html">الخط الزمني</a>
+                <a href="pages/gallery.html">معرض الصور</a>
+                <a href="pages/restoration.html">الترميم</a>
+            </div>
+
+            <div>
+                <h3>عن المشروع</h3>
+                <p>مشروع ثقافي وتعليمي رقمي للتعريف بالمتحف المصري الكبير.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 GEM Explorer - جميع الحقوق محفوظة</p>
+            <p>صُنع بحب من أجل الحضارة المصرية 🇪🇬</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحدي معرفة المتحف | GEM Explorer</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<header class="quiz-header">
+    <a href="../index.html" class="quiz-logo">GEM Explorer</a>
+    <a href="../index.html" class="back-home">العودة للرئيسية</a>
+</header>
+
+<main class="quiz-container">
+
+    <section class="quiz-intro" id="quizIntro">
+        <span class="quiz-label">اختبر معلوماتك</span>
+        <h1>تحدي معرفة المتحف المصري الكبير</h1>
+        <p>
+            هل أنت مستعد لاختبار معلوماتك عن المتحف المصري الكبير
+            والحضارة المصرية القديمة؟
+        </p>
+
+        <div class="quiz-info">
+            <div>
+                <strong>15</strong>
+                <span>سؤالًا</span>
+            </div>
+            <div>
+                <strong>15</strong>
+                <span>دقيقة</span>
+            </div>
+            <div>
+                <strong>12/15</strong>
+                <span>درجة النجاح</span>
+            </div>
+        </div>
+
+        <button class="start-btn" id="startBtn">ابدأ الاختبار</button>
+    </section>
+
+    <section class="quiz-content" id="quizContent" hidden>
+
+        <div class="quiz-topbar">
+            <span id="questionCounter">السؤال 1 من 15</span>
+            <div class="timer" id="timer">15:00</div>
+        </div>
+
+        <div class="progress-track">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <form id="quizForm">
+            <div id="questionsArea"></div>
+
+            <button type="submit" class="submit-btn">
+                إنهاء الاختبار وعرض النتيجة
+            </button>
+        </form>
+
+    </section>
+
+    <section class="result-section" id="resultSection" hidden>
+        <div class="result-icon" id="resultIcon">🏆</div>
+        <h2 id="resultTitle">نتيجتك</h2>
+        <p class="result-score" id="resultScore"></p>
+        <p id="resultMessage"></p>
+
+        <div class="certificate-area" id="certificateArea" hidden>
+            <h3>تهانينا! لقد حصلت على شهادة اجتياز التحدي</h3>
+
+            <label for="studentName">اكتب اسمك للحصول على الشهادة:</label>
+            <input
+                type="text"
+                id="studentName"
+                placeholder="اسم الطالب"
+                maxlength="60"
+            >
+
+            <button class="certificate-btn" id="certificateBtn">
+                إصدار الشهادة وطباعتها
+            </button>
+        </div>
+
+        <button class="retry-btn" id="retryBtn">إعادة الاختبار</button>
+        <a href="../index.html" class="result-home">العودة للرئيسية</a>
+    </section>
+
+</main>
+
+<script src="quiz.js"></script>
+</body>
+</html>
